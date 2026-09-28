@@ -51,10 +51,8 @@ app = FastAPI(
 
 base_dir = os.path.dirname(os.path.abspath(__file__))
 model_path = os.path.abspath(os.path.join(base_dir, "..", "Models", "random_forest_model.pkl"))
-print(model_path)
 
-
-from preprocessing import cast_taxi_dtypes
+from App.preprocessing import cast_taxi_dtypes
 import sys
 
 # Make pickle able to find it, whether run via `python` or `uvicorn`

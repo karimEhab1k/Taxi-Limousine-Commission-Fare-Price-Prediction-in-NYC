@@ -1,6 +1,6 @@
 FROM python:3.11-slim
 
-WORKDIR /App
+WORKDIR /app
 
 RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
@@ -8,8 +8,9 @@ RUN apt-get update && apt-get install -y \
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
-COPY App/ ./App/
-COPY Models/ ./Models/
+
+COPY App/ /app/App/
+COPY Models/ /app/Models/
 
 EXPOSE 8000
 
