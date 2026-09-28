@@ -22,3 +22,5 @@ Rather than treating every mile equally, the feature pipeline extracts critical 
 * **Dynamic Fare Estimation:** Delivers realistic, upfront pricing tailored to live route conditions.
 * **Revenue Optimization:** Aligns fares with driver opportunity costs, operating overhead, and localized peak demand.
 * **Production-Ready Pipeline:** Structured to ingest raw TLC trip records, execute preprocessing, and serve inferences for downstream services.
+
+You can check the Research and Development notebooks from this repo : <a href = 'https://github.com/karimEhab1k/NYC-TLC-Trips-Records-Data-R-D/tree/main'>repo</a>
